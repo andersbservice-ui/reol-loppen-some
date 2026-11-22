@@ -1,0 +1,95 @@
+{
+ "id": "E01",
+ "format": "fund-tur (jul)",
+ "hypotese": "Julepynt nu i november giver flere visninger end generelle fund",
+ "scener": [
+  {
+   "foto": "assets/fotos/IMG_1860.jpg",
+   "beskaer": [
+    0.12,
+    0.2,
+    1.0,
+    0.95
+   ],
+   "titel": "En HEL VÆG med nisser",
+   "sig": "Har du set vores nissevæg?",
+   "tekst": [
+    "Har du set",
+    "vores nissevæg?"
+   ],
+   "zoom": "punch",
+   "varighed": 2.2
+  },
+  {
+   "foto": "assets/fotos/IMG_1861.jpg",
+   "beskaer": [
+    0.0,
+    0.05,
+    0.8,
+    1.0
+   ],
+   "titel": "Retro skænk – klar til jul",
+   "sig": "Plads til hele julestellet.",
+   "tekst": [
+    "Plads til",
+    "hele julestellet"
+   ],
+   "varighed": 2.2
+  },
+  {
+   "foto": "assets/fotos/IMG_1862.jpg",
+   "beskaer": [
+    0.05,
+    0.33,
+    0.98,
+    1.0
+   ],
+   "titel": "Dronningeplatte fra 1972",
+   "sig": "Platte fra 1972. Kun 45 kroner.",
+   "tekst": [
+    "Fra 1972",
+    "kun 45 KR"
+   ],
+   "stempel": "JA",
+   "stempel_tid": 1.1,
+   "varighed": 2.4
+  },
+  {
+   "foto": "assets/fotos/IMG_1856.jpg",
+   "beskaer": [
+    0.0,
+    0.15,
+    0.8,
+    0.75
+   ],
+   "titel": "Glas, lamper og legetøj",
+   "sig": "Glas, lamper og legetøj.",
+   "tekst": [
+    "Glas, lamper",
+    "og legetøj"
+   ],
+   "zoom": "ud",
+   "varighed": 2.0
+  },
+  {
+   "foto": "assets/fotos/IMG_1865.jpg",
+   "beskaer": [
+    0.35,
+    0.3,
+    1.0,
+    0.95
+   ],
+   "titel": "Og så meget MERE",
+   "sig": "Og så meget mere.",
+   "tekst": [
+    "Kom og",
+    "kig selv"
+   ],
+   "varighed": 2.0
+  }
+ ],
+ "outro": {
+  "varighed": 2.6,
+  "knap": "Kom og gør et fund"
+ }
+}

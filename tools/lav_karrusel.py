@@ -47,7 +47,8 @@ def slide_html(s, n, total, brand):
     css = CSS.replace("__PRIM__", brand["farve_primaer"]).replace("__FONT__", brand.get("font", "Montserrat"))
     h = [f"<!doctype html><html><head><meta charset='utf-8'><style>{css}</style></head><body>"]
     if s.get("foto"):
-        h.append(f'<img class="bg" src="{img_data_uri(s["foto"])}">')
+        h.append(f'<img class="bg" src="{img_data_uri(s["foto"], crop=s.get("beskaer"))}" '
+                 f'style="object-position:{s.get("fokus", "50% 50%")}">')
     else:
         h.append(f'<div class="bg" style="background:{brand["farve_moerk"]}"></div>')
     h.append('<div class="gt"></div><div class="gb"></div>')

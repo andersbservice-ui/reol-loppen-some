@@ -1,0 +1,86 @@
+{
+ "id": "K01",
+ "format": "tjekliste: 5 ting du finder hos os",
+ "hypotese": "Karrusel med nummererede fund giver gem/delinger",
+ "slides": [
+  {
+   "type": "krog",
+   "foto": "assets/fotos/IMG_1856.jpg",
+   "beskaer": [
+    0.0,
+    0.1,
+    0.85,
+    0.8
+   ],
+   "titel": "5 ting du finder hos os LIGE NU",
+   "tekst": "Nr. 3 er en dronningeplatte"
+  },
+  {
+   "type": "trin",
+   "foto": "assets/fotos/IMG_1859.jpg",
+   "beskaer": [
+    0.0,
+    0.25,
+    0.8,
+    1.0
+   ],
+   "titel": "Gyngestole med sjæl"
+  },
+  {
+   "type": "trin",
+   "foto": "assets/fotos/IMG_1861.jpg",
+   "beskaer": [
+    0.0,
+    0.05,
+    0.8,
+    1.0
+   ],
+   "titel": "Retro skænk"
+  },
+  {
+   "type": "trin",
+   "foto": "assets/fotos/IMG_1862.jpg",
+   "beskaer": [
+    0.05,
+    0.33,
+    0.98,
+    1.0
+   ],
+   "titel": "Dronningeplatte fra 1972",
+   "tekst": "45 kr"
+  },
+  {
+   "type": "trin",
+   "foto": "assets/fotos/IMG_1860.jpg",
+   "beskaer": [
+    0.12,
+    0.2,
+    1.0,
+    0.95
+   ],
+   "titel": "En HEL VÆG med nisser"
+  },
+  {
+   "type": "trin",
+   "foto": "assets/fotos/IMG_1863.jpg",
+   "beskaer": [
+    0.3,
+    0.05,
+    1.0,
+    1.0
+   ],
+   "titel": "Tøj, bøger og film"
+  },
+  {
+   "type": "outro",
+   "foto": "assets/fotos/IMG_1858.jpg",
+   "beskaer": [
+    0.0,
+    0.25,
+    1.0,
+    1.0
+   ],
+   "titel": "Og MEGET mere"
+  }
+ ]
+}

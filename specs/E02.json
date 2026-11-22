@@ -1,0 +1,97 @@
+{
+ "id": "E02",
+ "format": "butikstur (lokal vinkel)",
+ "hypotese": "Lokal krog med 'Langeskov Centeret' giver flere visninger end E01",
+ "scener": [
+  {
+   "foto": "assets/fotos/IMG_1858.jpg",
+   "beskaer": [
+    0.0,
+    0.25,
+    1.0,
+    1.0
+   ],
+   "titel": "Det her gemmer sig i LANGESKOV",
+   "sig": "Det her gemmer sig i Langeskov Centeret.",
+   "tekst": [
+    "Midt i",
+    "Langeskov Centeret"
+   ],
+   "zoom": "punch",
+   "varighed": 2.3
+  },
+  {
+   "foto": "assets/fotos/IMG_1859.jpg",
+   "beskaer": [
+    0.0,
+    0.25,
+    0.8,
+    1.0
+   ],
+   "titel": "Gyngestole med sjæl",
+   "sig": "Gyngestole med sjæl.",
+   "tekst": [
+    "Gyngestole",
+    "med sjæl"
+   ],
+   "badge": 1,
+   "varighed": 2.0
+  },
+  {
+   "foto": "assets/fotos/IMG_1863.jpg",
+   "beskaer": [
+    0.3,
+    0.05,
+    1.0,
+    1.0
+   ],
+   "titel": "Tøj, bøger og film",
+   "sig": "Tøj, bøger og film.",
+   "tekst": [
+    "Tøj, bøger",
+    "og film"
+   ],
+   "badge": 2,
+   "varighed": 2.0
+  },
+  {
+   "foto": "assets/fotos/IMG_1864.jpg",
+   "beskaer": [
+    0.08,
+    0.42,
+    0.55,
+    0.95
+   ],
+   "titel": "Kopper og stel",
+   "sig": "Kopper og stel til hverdag og fest.",
+   "tekst": [
+    "Til hverdag",
+    "og fest"
+   ],
+   "badge": 3,
+   "zoom": "ud",
+   "varighed": 2.0
+  },
+  {
+   "foto": "assets/fotos/IMG_1865.jpg",
+   "beskaer": [
+    0.16,
+    0.45,
+    0.8,
+    1.0
+   ],
+   "titel": "Og husk: KIG I KÆLDEREN",
+   "sig": "Og husk at kigge i kælderen.",
+   "tekst": [
+    "Husk at kigge",
+    "i kælderen"
+   ],
+   "varighed": 2.2,
+   "fokus": "0% 50%"
+  }
+ ],
+ "outro": {
+  "varighed": 2.6,
+  "knap": "Kom og gør et fund"
+ }
+}

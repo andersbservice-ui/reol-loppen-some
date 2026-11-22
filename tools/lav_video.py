@@ -32,7 +32,7 @@ import tempfile
 import wave
 
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageOps
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -50,9 +50,13 @@ def load_brand():
         return json.load(f)
 
 
-def img_data_uri(path, max_h=1600):
+def img_data_uri(path, max_h=1600, crop=None):
+    """crop = [x0, y0, x1, y1] i brøkdele (0-1) - bruges til at skære logoer/ansigter fra."""
     p = path if os.path.isabs(path) else os.path.join(ROOT, path)
-    im = Image.open(p).convert("RGB")
+    im = ImageOps.exif_transpose(Image.open(p)).convert("RGB")
+    if crop:
+        w, h = im.size
+        im = im.crop((int(crop[0] * w), int(crop[1] * h), int(crop[2] * w), int(crop[3] * h)))
     if im.height > max_h:
         im = im.resize((int(im.width * max_h / im.height), max_h), Image.LANCZOS)
     buf = io.BytesIO()
@@ -204,7 +208,8 @@ def build(spec_path, out_path=None, preview_only=False):
     # 3) HTML
     parts = []
     for i, s in enumerate(scenes):
-        h = [f'<div class="scene" id="sc{i}"><img src="{img_data_uri(s["foto"])}">',
+        pos = s.get("fokus", "50% 50%")
+        h = [f'<div class="scene" id="sc{i}"><img src="{img_data_uri(s["foto"], crop=s.get("beskaer"))}" style="object-position:{pos}">',
              '<div class="gt"></div><div class="gb"></div>']
         if s.get("titel"):
             b = f'<span class="badge">{s["badge"]}</span>' if s.get("badge") else ""
