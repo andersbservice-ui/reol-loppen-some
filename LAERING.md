@@ -28,9 +28,12 @@ Mindst ét "vildt" eksperiment om ugen.
 ## Eksperiment-log
 | ID | Dato/tid | Kanal | Format | Hypotese | Ændring vs. baseline | Visninger | Kommentarer | Delinger | Resultat |
 |---|---|---|---|---|---|---|---|---|---|
+| E01 | søn 22/11 15:45 | TikTok + IG Reel | Video, fund-tur (jul), 13 s, uden stemme | Julevinkel i nov. giver mange visninger | BASELINE (første video) | | | | afventer |
+| K01 | tir 24/11 18:00 | TikTok foto + IG karrusel | Karrusel 7 slides, "5 ting du finder" | Nummererede fund giver gem/delinger | Baseline for karruseller | | | | afventer |
+| E02 | tor 26/11 18:00 | TikTok + IG Reel | Video, butikstur, lokal krog | Lokal krog ("Langeskov") slår E01 | Krog: lokal vinkel i stedet for jul | | | | afventer |
 
 ## Virker
-- (endnu tom)
+- Kunden har godkendt stilen (22/11 2026): venstrestillet tekst, gul fremhævning, outro "Kom forbi Reol Loppen".
 
 ## Virker ikke
 - (endnu tom)
@@ -45,3 +48,15 @@ Mindst ét "vildt" eksperiment om ugen.
 ## Brugte fotos
 | Foto (filnavn i Drive) | Brugt i | Dato |
 |---|---|---|
+| IMG_1856 | E01, K01 | nov 2026 |
+| IMG_1857 | E02 (beskåret, bannere med bilmærker skåret væk) – senere erstattet af 1865 | nov 2026 |
+| IMG_1858 | E02, K01 | nov 2026 |
+| IMG_1859 | E02, K01 | nov 2026 |
+| IMG_1860 | E01, K01 | nov 2026 |
+| IMG_1861 | E01, K01 | nov 2026 |
+| IMG_1862 | E01, K01 (pris 45 kr aflæst på prismærke) | nov 2026 |
+| IMG_1863 | E02, K01 | nov 2026 |
+| IMG_1864 | E02 | nov 2026 |
+| IMG_1865 | E01, E02 (beskåret uden bannere) | nov 2026 |
+
+OBS: IMG_1857/1865 har bannere med bilmærker (Michelin/BMW) til venstre – skær dem altid fra. IMG_1864 viser kasseapparat med Saldi/Flatpay-logo – skær fra.
