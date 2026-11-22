@@ -1,0 +1,17 @@
+{
+  "id": "TEST01",
+  "format": "spar penge (nyt vs brugt)",
+  "scener": [
+    {"foto": "assets/fotos/test1.jpg", "titel": "Ny koster den 400 KR",
+     "sig": "Ny koster den her 400 kroner.", "tekst": ["Ny koster", "den 400 KR"], "zoom": "punch", "varighed": 2.0},
+    {"foto": "assets/fotos/test2.jpg", "titel": "Skal du betale fuld pris?",
+     "sig": "Skal du virkelig betale fuld pris?", "stempel": "NEJ", "varighed": 2.0},
+    {"foto": "assets/fotos/test3.jpg", "titel": "Hos os: 40 KR", "badge": 1,
+     "sig": "Hos os fandt vi den til fyrre kroner.", "tekst": ["Hos os", "kun 40 KR"], "varighed": 2.2},
+    {"foto": "assets/fotos/test4.jpg", "titel": "Nye fund hver uge", "badge": 2,
+     "sig": "Og der kommer nye fund hver eneste uge.", "varighed": 2.2, "zoom": "ud"},
+    {"foto": "assets/fotos/test5.jpg", "titel": "Kom og gør et fund",
+     "sig": "Kom forbi og gør dit eget fund.", "varighed": 2.0}
+  ],
+  "outro": {"varighed": 2.6}
+}

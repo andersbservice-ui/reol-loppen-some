@@ -1,0 +1,12 @@
+{
+  "id": "TESTK01",
+  "format": "tjekliste: fund under 50 kr",
+  "slides": [
+    {"type": "krog", "foto": "assets/fotos/test1.jpg", "titel": "4 fund under 50 KR i denne uge", "tekst": "Nr. 3 er VILDT billig"},
+    {"type": "trin", "foto": "assets/fotos/test2.jpg", "titel": "Retro bordlampe", "tekst": "45 kr"},
+    {"type": "trin", "foto": "assets/fotos/test3.jpg", "titel": "Kaffestel til 6", "tekst": "50 kr"},
+    {"type": "trin", "foto": "assets/fotos/test4.jpg", "titel": "Børnebøger", "tekst": "5 kr stykket"},
+    {"type": "trin", "foto": "assets/fotos/test5.jpg", "titel": "Vinterjakke", "tekst": "40 kr"},
+    {"type": "outro", "foto": "assets/fotos/test1.jpg"}
+  ]
+}
