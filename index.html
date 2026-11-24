@@ -141,6 +141,79 @@ footer h3{margin:0 0 10px;font-size:1rem;font-weight:800}
 footer p{margin:0 0 6px;color:var(--muted)}
 .copy{border-top:1px solid var(--line);padding:16px 24px;text-align:center;color:var(--muted);font-size:.9rem}
 
+/* Levende pynt */
+.has-dc{position:relative;overflow:hidden}
+.has-dc>.wrap{position:relative;z-index:1}
+.dc{position:absolute;z-index:0;pointer-events:none;display:block;opacity:.85}
+.dc svg{display:block;width:100%;height:auto;overflow:visible}
+.hero .dc-tag{right:3%;top:0;width:34px;transform-origin:50% 0}
+.hero .dc-s{left:2%;top:22%;width:20px}
+.hero .dc-s2{left:46%;bottom:10%;width:14px}
+.hero .dc-lamp{left:44%;top:9%;width:34px;opacity:.5}
+#udvalg .dc-cup{right:4%;top:56px;width:44px;opacity:.55}
+#udvalg .dc-s{right:12%;top:120px;width:16px}
+#udvalg .dc-vase{left:2%;top:38%;width:38px;opacity:.45}
+#udvalg .dc-s2{left:4%;bottom:12%;width:18px}
+.gallery .dc-vinyl{right:-22px;top:28px;width:90px;opacity:.9}
+.gallery .dc-s{left:3%;top:40px;width:18px}
+.gallery .dc-heart{left:2%;bottom:30px;width:22px;opacity:.7}
+#saadan-koeber-du .dc-chair{right:4%;top:50px;width:46px;opacity:.5}
+#saadan-koeber-du .dc-s{left:3%;top:56px;width:16px}
+#saadan-koeber-du .dc-tag2{left:1.5%;bottom:0;width:28px;transform-origin:50% 0;opacity:.8}
+.visit .dc-clock{right:4%;bottom:30px;width:52px;opacity:.5}
+.visit .dc-clock svg{stroke:#ffb27a}
+.visit .dc-s{left:3%;top:40px;width:18px}
+.visit .dc-s2{right:38%;top:28px;width:12px}
+#spoergsmaal .dc-lamp{right:5%;top:60px;width:40px;opacity:.45}
+#spoergsmaal .dc-s{right:14%;top:150px;width:14px}
+.a-float{animation:dc-float 6s ease-in-out infinite}
+.a-sway{animation:dc-sway 3.6s ease-in-out infinite}
+.a-sway2{animation:dc-sway2 5s ease-in-out infinite}
+.a-tw{animation:dc-tw 2.8s ease-in-out infinite}
+.a-spin svg{animation:dc-spin 9s linear infinite}
+.a-beat{animation:dc-beat 2.2s ease-in-out infinite}
+.a-rock svg{animation:dc-rock 3s ease-in-out infinite;transform-origin:50% 90%}
+.dc-clock .hand{transform-origin:12px 12px;animation:dc-spin 12s linear infinite}
+.d1{animation-delay:.7s}.d2{animation-delay:1.4s}.d3{animation-delay:2.1s}
+@keyframes dc-float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-12px) rotate(3deg)}}
+@keyframes dc-sway{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
+@keyframes dc-sway2{0%,100%{transform:rotate(-6deg) translateY(0)}50%{transform:rotate(6deg) translateY(-6px)}}
+@keyframes dc-tw{0%,100%{opacity:.25;transform:scale(.7) rotate(0)}50%{opacity:1;transform:scale(1.15) rotate(20deg)}}
+@keyframes dc-spin{to{transform:rotate(360deg)}}
+@keyframes dc-beat{0%,100%{transform:scale(1)}15%{transform:scale(1.2)}30%{transform:scale(1)}45%{transform:scale(1.12)}}
+@keyframes dc-rock{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+
+/* Overskrifter med lille bølge */
+h2.marker::after{content:"";display:block;width:110px;height:12px;margin-top:8px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 12'%3E%3Cpath d='M2 6c9-6 18 6 27 0s18 6 27 0 18 6 27 0 18 6 25 0' fill='none' stroke='%23E8772E' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat;animation:dc-wave 4s ease-in-out infinite}
+@keyframes dc-wave{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+
+/* Små hover-effekter */
+.btn{transition:transform .2s ease,background .2s}
+.btn:hover{transform:translateY(-2px) rotate(-1.5deg)}
+.grid img,.cat-img img{transition:transform .4s ease}
+.grid figure{overflow:visible}
+.grid figure:hover img{transform:scale(1.04) rotate(-1deg)}
+.cat-img:hover img{transform:scale(1.02)}
+.perks li:hover .perk-ico{animation:dc-bounce .6s ease}
+.steps li{transition:transform .25s ease,box-shadow .25s}
+.steps li:hover{transform:translateY(-4px);box-shadow:6px 6px 0 var(--accent)}
+.steps li:hover .num{animation:dc-bounce .6s ease}
+@keyframes dc-bounce{0%,100%{transform:translateY(0)}40%{transform:translateY(-8px) rotate(-6deg)}70%{transform:translateY(0) rotate(3deg)}}
+
+/* Glid ind når man scroller */
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+html.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:640px){
+  .hero .dc-lamp,.hero .dc-s2,#udvalg .dc-vase,#udvalg .dc-s2,#saadan-koeber-du .dc-tag2,.visit .dc-s2{display:none}
+  .gallery .dc-vinyl{width:64px;right:-18px}
+  .hero .dc-tag{width:26px}
+}
+@media (prefers-reduced-motion:reduce){
+  .dc,.dc svg,.dc .hand,h2.marker::after,.btn,.steps li{animation:none!important;transition:none!important}
+  html.js .rv{opacity:1;transform:none;transition:none}
+}
+
 /* BF-START: Black Friday-banner (fjernes efter fredag 27/11 kl. 22) */
 .bf{position:relative;overflow:hidden;background:#141414;color:#fff;border-bottom:4px solid var(--accent)}
 .bf[hidden]{display:none}
@@ -218,7 +291,8 @@ footer p{margin:0 0 6px;color:var(--muted)}
 
 <main id="indhold">
   <!-- Hero -->
-  <section class="hero" id="top">
+  <section class="has-dc hero" id="top">
+    <span class="dc dc-tag a-sway" aria-hidden="true"><svg viewBox="0 0 40 70" fill="none"><path d="M20 0v22" stroke="#9a4512" stroke-width="1.5" stroke-dasharray="2 3"/><path d="M8 30l12-10 12 10v34a3 3 0 0 1-3 3H11a3 3 0 0 1-3-3z" fill="#E8772E"/><circle cx="20" cy="30" r="3" fill="#fff"/><text x="20" y="54" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="13" fill="#fff">%</text></svg></span><span class="dc dc-s a-tw" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#E8772E"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span><span class="dc dc-s2 a-tw d2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#E8772E"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span><span class="dc dc-lamp a-float" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#9a4512" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l3 8H5z"/><path d="M12 11v8"/><path d="M8 21h8"/></svg></span>
     <div class="wrap">
       <div class="hero-text">
         <p class="eyebrow">Loppemarked · Genbrug · Langeskov</p>
@@ -251,12 +325,13 @@ footer p{margin:0 0 6px;color:var(--muted)}
   </div>
 
   <!-- Udvalg -->
-  <section class="block" id="udvalg">
+  <section class="has-dc block" id="udvalg">
+    <span class="dc dc-cup a-float" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#9a4512" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h12v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M16 11h1.5a2.5 2.5 0 0 1 0 5H15"/><path d="M8 3c0 2 1.5 2 1.5 4M12 3c0 2 1.5 2 1.5 4"/><path d="M3 21h14"/></svg></span><span class="dc dc-s a-tw d1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#E8772E"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span><span class="dc dc-vase a-sway2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#9a4512" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3c0 3-4 5-4 10a6 6 0 0 0 12 0c0-5-4-7-4-10"/><path d="M12 8c-2-3-5-3-6-2M12 8c2-3 5-3 6-2"/></svg></span><span class="dc dc-s2 a-tw d3" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#E8772E"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span>
     <div class="wrap">
       <h2 class="marker">Det finder du hos os</h2>
       <p class="intro">Vi er et loppemarked under tag med lidt af det hele. Her er nogle af de ting, du typisk kan gøre et godt fund i.</p>
 
-      <article class="cat">
+      <article class="cat rv">
         <div class="cat-img"><img style="object-position:40% 70%" src="assets/fotos/gyngestole-og-moebler.jpg" alt="To gyngestole i træ med polstrede sæder foran skabe og reoler" width="1200" height="1600" loading="lazy"></div>
         <div class="cat-text">
           <h3>Møbler</h3>
@@ -265,7 +340,7 @@ footer p{margin:0 0 6px;color:var(--muted)}
         </div>
       </article>
 
-      <article class="cat rev">
+      <article class="cat rev rv">
         <div class="cat-img"><img src="assets/fotos/hylder-glas-porcelaen.jpg" alt="Hylder med vinglas, blå glas, skåle, tallerkener, lamper og vaser" width="1200" height="1600" loading="lazy"></div>
         <div class="cat-text">
           <h3>Glas, porcelæn og bolig</h3>
@@ -274,7 +349,7 @@ footer p{margin:0 0 6px;color:var(--muted)}
         </div>
       </article>
 
-      <article class="cat">
+      <article class="cat rv">
         <div class="cat-img"><img src="assets/fotos/platter-og-nips.jpg" alt="Gamle platter, en nisse og en vase med roser på et skab i mørkt træ" width="1200" height="1600" loading="lazy"></div>
         <div class="cat-text">
           <h3>Ældre ting og samlerting</h3>
@@ -286,11 +361,12 @@ footer p{margin:0 0 6px;color:var(--muted)}
   </section>
 
   <!-- Galleri -->
-  <section class="block gallery" aria-labelledby="rundtur">
+  <section class="has-dc block gallery" aria-labelledby="rundtur">
+    <span class="dc dc-vinyl a-spin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#9a4512"><circle cx="12" cy="12" r="10" fill="#1a1a1a" stroke="none"/><circle cx="12" cy="12" r="7" stroke="#444" stroke-width=".6"/><circle cx="12" cy="12" r="5" stroke="#444" stroke-width=".6"/><circle cx="12" cy="12" r="3" fill="#E8772E" stroke="none"/><circle cx="12" cy="12" r=".7" fill="#fff" stroke="none"/></svg></span><span class="dc dc-s a-tw" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#E8772E"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span><span class="dc dc-heart a-beat" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#E8772E"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z"/></svg></span>
     <div class="wrap">
       <h2 class="marker" id="rundtur">Tag en tur i butikken</h2>
       <p class="intro">Et lille kig ind ad døren. Det rigtige udvalg skal opleves – og det ser anderledes ud hver uge.</p>
-      <div class="grid">
+      <div class="grid rv">
         <figure><img src="assets/fotos/butikken-hero.jpg" alt="Overblik over butikken med møbler og fyldte hylder" width="1200" height="1080" loading="lazy"><figcaption>Masser at kigge på</figcaption></figure>
         <figure><img src="assets/fotos/skab-glaslaager.jpg" alt="Stort mørkt træskab med glaslåger og pynt" width="1200" height="1600" loading="lazy"><figcaption>Møbler med karakter</figcaption></figure>
         <figure><img src="assets/fotos/hylder-glas-porcelaen.jpg" alt="Hylder med glas, porcelæn og lamper" width="1200" height="1600" loading="lazy"><figcaption>Glas og porcelæn</figcaption></figure>
@@ -301,11 +377,12 @@ footer p{margin:0 0 6px;color:var(--muted)}
   </section>
 
   <!-- Sådan køber du -->
-  <section class="block" id="saadan-koeber-du">
+  <section class="has-dc block" id="saadan-koeber-du">
+    <span class="dc dc-chair a-rock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#9a4512" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v11h10v8"/><path d="M7 13v8"/><path d="M7 6h8"/><path d="M4 21c3 1.5 13 1.5 16 0"/></svg></span><span class="dc dc-s a-tw d2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#E8772E"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span><span class="dc dc-tag2 a-sway d1" aria-hidden="true"><svg viewBox="0 0 40 70" fill="none"><path d="M20 0v22" stroke="#9a4512" stroke-width="1.5" stroke-dasharray="2 3"/><path d="M8 30l12-10 12 10v34a3 3 0 0 1-3 3H11a3 3 0 0 1-3-3z" fill="#E8772E"/><circle cx="20" cy="30" r="3" fill="#fff"/><text x="20" y="54" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="13" fill="#fff">%</text></svg></span>
     <div class="wrap">
       <h2 class="marker">Køb via Instagram</h2>
       <p class="intro">Kan du ikke nå forbi med det samme? Vi lægger nye ting op i vores stories på Instagram – så kan du sikre dig dem hjemmefra.</p>
-      <ol class="steps">
+      <ol class="steps rv">
         <li><div class="num" style="background:#fde2ee;color:#8f1350" aria-hidden="true">1</div><h3>Se vores story</h3><p>Vi viser nye ting på Instagram, så snart de kommer ind.</p></li>
         <li><div class="num" style="background:#dcf3fa;color:#0b5d75" aria-hidden="true">2</div><h3>Skriv „Den vil jeg have"</h3><p>Svar på storyen eller send os en besked. Først til mølle.</p></li>
         <li><div class="num" style="background:#fff1c2;color:#7a5200" aria-hidden="true">3</div><h3>Betal med MobilePay</h3><p>Du får et link fra os, så du nemt kan betale.</p></li>
@@ -315,7 +392,8 @@ footer p{margin:0 0 6px;color:var(--muted)}
   </section>
 
   <!-- Besøg os -->
-  <section class="block visit" id="find-os">
+  <section class="has-dc block visit" id="find-os">
+    <span class="dc dc-clock a-float d2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#9a4512" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path class="hand" d="M12 12V6"/><path d="M12 12l4 2"/></svg></span><span class="dc dc-s a-tw" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#E8772E"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span><span class="dc dc-s2 a-tw d1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#E8772E"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span>
     <div class="wrap">
       <div class="col">
         <h2 class="marker">Besøg os</h2>
@@ -338,10 +416,11 @@ footer p{margin:0 0 6px;color:var(--muted)}
   </section>
 
   <!-- FAQ -->
-  <section class="block" id="spoergsmaal">
+  <section class="has-dc block" id="spoergsmaal">
+    <span class="dc dc-lamp a-float d1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#9a4512" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l3 8H5z"/><path d="M12 11v8"/><path d="M8 21h8"/></svg></span><span class="dc dc-s a-tw d3" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#E8772E"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span>
     <div class="wrap">
       <h2 class="marker">Spørgsmål og svar</h2>
-      <div class="faq">
+      <div class="faq rv">
         <details><summary>Hvornår har I åbent?</summary><p>Vi har åbent onsdag til fredag kl. 10–17 og lørdag og søndag kl. 10–16. Mandag og tirsdag er der lukket.</p></details>
         <details><summary>Hvor ligger Reol-Loppen?</summary><p>Du finder os i Langeskov Centeret 17 i Langeskov. Tryk på „Find vej" ovenfor, så åbner Google Maps.</p></details>
         <details><summary>Hvad kan man finde hos jer?</summary><p>Møbler, glas, porcelæn, lamper, billeder, pynt, ældre ting og meget andet. Udvalget skifter hele tiden, så kig forbi tit.</p></details>
@@ -388,6 +467,16 @@ footer p{margin:0 0 6px;color:var(--muted)}
     dot.style.background='#e0604f';st.textContent='Lukket lige nu';
     for(var k=0;k<8;k++){var d=(wd+k)%7,s=schedule[d];if(s&&(k>0||h<s[0])){st.textContent='Lukket nu – åbner '+(k===0?'i dag':k===1?'i morgen':names[d])+' kl. '+s[0];break;}}
   }catch(e){}
+})();
+</script>
+<script>
+/* Levende pynt: glid ind ved scroll */
+(function(){
+  var d=document.documentElement; d.classList.add('js');
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
 })();
 </script>
 <!-- BF-START -->
