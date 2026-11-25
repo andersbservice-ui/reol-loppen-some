@@ -126,6 +126,14 @@
     },
     {
      "@type": "Question",
+     "name": "Køber I brugte ting eller tømmer dødsboer?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja. Vi køber brugte ting og tilbyder at tømme dødsboer. Læs mere og find telefonnumrene på siden om dødsbo og opkøb."
+     }
+    },
+    {
+     "@type": "Question",
      "name": "Kan man parkere ved butikken?",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -287,6 +295,8 @@ footer p{margin:0 0 6px;color:var(--muted)}
 /* Genbrug på Fyn + anmeldelse */
 .local-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:center}
 .local p{max-width:640px}
+.sell-teaser{margin-top:18px;padding:14px 18px;border-left:4px solid var(--accent);background:#fff6ef;border-radius:8px}
+.sell-teaser a{font-weight:800}
 .review-card{background:#141414;color:#fff;border-radius:18px;padding:28px;box-shadow:8px 8px 0 var(--accent);text-align:center}
 .review-card h3{margin:6px 0 8px;color:#fff}
 .review-card p{color:#d8d8d8;margin:0 auto 18px}
@@ -444,6 +454,7 @@ html.js .rv.in{opacity:1;transform:none}
       <a href="#udvalg">Udvalg</a>
       <a href="#saadan-koeber-du">Sådan køber du</a>
       <a href="#spoergsmaal">Spørgsmål</a>
+      <a href="doedsbo/">Dødsbo &amp; salg</a>
       <a class="btn btn-dark" href="#find-os">Find butikken</a>
     </nav>
   </div>
@@ -608,8 +619,9 @@ html.js .rv.in{opacity:1;transform:none}
     <div class="wrap local-grid">
       <div class="rv">
         <h2 class="marker">Genbrug og loppefund midt på Fyn</h2>
-        <p>Leder du efter en <strong>genbrugsbutik</strong> eller et <strong>loppemarked</strong> på Fyn? Reol-Loppen ligger i Langeskov Centeret i Langeskov, mellem Odense og Nyborg. Her kan du gøre gode fund i <strong>brugte møbler</strong>, retro og antikke ting, glas, porcelæn, lamper og pynt – samlet under tag, så du kan gå på opdagelse uanset vejret.</p>
+        <p>Leder du efter en <strong>genbrugsbutik</strong> eller et <strong>loppemarked</strong> på Fyn? Reol-Loppen er et indendørs loppemarked og en genbrugsbutik i Langeskov Centeret i Langeskov – midt på Fyn, mellem Odense og Nyborg. Her kan du gøre gode fund i <strong>brugte møbler</strong>, retro og antikke ting, glas, porcelæn, lamper og pynt – samlet under tag, så du kan gå på opdagelse uanset vejret.</p>
         <p>Genbrug er godt for både pengepungen og miljøet. Når du køber brugt, får ting med historie et nyt liv i stedet for at blive smidt ud. Og fordi udvalget skifter hele tiden, er der altid noget nyt at finde, når du kigger forbi.</p>
+        <p class="sell-teaser"><strong>Vi køber også brugte ting og tømmer dødsboer.</strong> <a href="doedsbo/">Læs mere om dødsbo og opkøb →</a></p>
       </div>
       <aside class="review-card rv" aria-labelledby="anmeld">
         <div class="stars" aria-hidden="true">★★★★★</div>
@@ -631,6 +643,7 @@ html.js .rv.in{opacity:1;transform:none}
         <details><summary>Hvad kan man finde hos jer?</summary><p>Møbler, glas, porcelæn, lamper, billeder, pynt, ældre ting og meget andet. Udvalget skifter hele tiden, så kig forbi tit.</p></details>
         <details><summary>Hvor tit kommer der nye ting?</summary><p>Der kommer nye ting ind hele tiden. Følg os på Instagram, så ser du dem, så snart de er på hylderne.</p></details>
         <details><summary>Kan jeg købe noget uden at komme forbi først?</summary><p>Ja. Ser du noget i vores stories på Instagram, så skriv „Den vil jeg have". Du får et MobilePay-link, og så lægger vi tingen til side, til du henter den i åbningstiden.</p></details>
+        <details><summary>Køber I brugte ting eller tømmer dødsboer?</summary><p>Ja. Vi køber brugte ting og tilbyder at tømme dødsboer. Læs mere og find telefonnumrene på siden om dødsbo og opkøb.</p></details>
         <details><summary>Kan man parkere ved butikken?</summary><p>Ja, der er parkering ved Langeskov Centeret.</p></details>
         <details><summary>Hvor ligger Langeskov?</summary><p>Langeskov ligger på Fyn mellem Odense og Nyborg. Butikken finder du i Langeskov Centeret 17.</p></details>
         <details><summary>Er der mere end det, man ser, når man kommer ind?</summary><p>Ja – husk at kigge i kælderen. Der er også masser at gå på opdagelse i.</p></details>
