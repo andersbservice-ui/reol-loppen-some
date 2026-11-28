@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://reol-loppen-langeskov.dk/sitemap.xml
+Sitemap: https://reol-loppen-langeskov.dk/sitemap.xml

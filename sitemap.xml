@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>http://reol-loppen-langeskov.dk/</loc>
+    <loc>https://reol-loppen-langeskov.dk/</loc>
     <lastmod>2026-11-25</lastmod>
-    <image:image><image:loc>http://reol-loppen-langeskov.dk/assets/fotos/butikken-hero.jpg</image:loc></image:image>
-    <image:image><image:loc>http://reol-loppen-langeskov.dk/assets/fotos/butikken-oversigt.jpg</image:loc></image:image>
-    <image:image><image:loc>http://reol-loppen-langeskov.dk/assets/fotos/gyngestole-og-moebler.jpg</image:loc></image:image>
-    <image:image><image:loc>http://reol-loppen-langeskov.dk/assets/fotos/hylder-glas-porcelaen.jpg</image:loc></image:image>
-    <image:image><image:loc>http://reol-loppen-langeskov.dk/assets/fotos/platter-og-nips.jpg</image:loc></image:image>
-    <image:image><image:loc>http://reol-loppen-langeskov.dk/assets/fotos/skab-glaslaager.jpg</image:loc></image:image>
+    <image:image><image:loc>https://reol-loppen-langeskov.dk/assets/fotos/butikken-hero.jpg</image:loc></image:image>
+    <image:image><image:loc>https://reol-loppen-langeskov.dk/assets/fotos/butikken-oversigt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://reol-loppen-langeskov.dk/assets/fotos/gyngestole-og-moebler.jpg</image:loc></image:image>
+    <image:image><image:loc>https://reol-loppen-langeskov.dk/assets/fotos/hylder-glas-porcelaen.jpg</image:loc></image:image>
+    <image:image><image:loc>https://reol-loppen-langeskov.dk/assets/fotos/platter-og-nips.jpg</image:loc></image:image>
+    <image:image><image:loc>https://reol-loppen-langeskov.dk/assets/fotos/skab-glaslaager.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>http://reol-loppen-langeskov.dk/doedsbo/</loc>
+    <loc>https://reol-loppen-langeskov.dk/doedsbo/</loc>
     <lastmod>2026-11-25</lastmod>
   </url>
 </urlset>
