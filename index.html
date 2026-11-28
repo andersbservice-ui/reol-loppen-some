@@ -39,7 +39,7 @@
    "image": "https://reol-loppen-langeskov.dk/assets/fotos/butikken-hero.jpg",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Langeskov Centeret 17",
+    "streetAddress": "Langeskov Centret 17",
     "addressLocality": "Langeskov",
     "addressCountry": "DK",
     "postalCode": "5550",
@@ -54,7 +54,7 @@
       "Friday"
      ],
      "opens": "10:00",
-     "closes": "17:00"
+     "closes": "17:30"
     },
     {
      "@type": "OpeningHoursSpecification",
@@ -89,7 +89,7 @@
      "name": "Hvornår har I åbent?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Vi har åbent onsdag til fredag kl. 10–17 og lørdag og søndag kl. 10–16. Mandag og tirsdag er der lukket."
+      "text": "Vi har åbent onsdag til fredag kl. 10–17.30 og lørdag og søndag kl. 10–16. Mandag og tirsdag er der lukket."
      }
     },
     {
@@ -529,7 +529,7 @@ html.js .rv.in{opacity:1;transform:none}
       <div class="col">
         <h3>Åbningstider</h3>
         <dl class="hours">
-          <dt>Onsdag – fredag</dt><dd>10–17</dd>
+          <dt>Onsdag – fredag</dt><dd>10–17.30</dd>
           <dt>Lørdag – søndag</dt><dd>10–16</dd>
           <dt class="closed">Mandag – tirsdag</dt><dd class="closed">Lukket</dd>
         </dl>
@@ -561,7 +561,7 @@ html.js .rv.in{opacity:1;transform:none}
     <div class="wrap">
       <h2 class="marker">Spørgsmål og svar</h2>
       <div class="faq rv">
-        <details><summary>Hvornår har I åbent?</summary><p>Vi har åbent onsdag til fredag kl. 10–17 og lørdag og søndag kl. 10–16. Mandag og tirsdag er der lukket.</p></details>
+        <details><summary>Hvornår har I åbent?</summary><p>Vi har åbent onsdag til fredag kl. 10–17.30 og lørdag og søndag kl. 10–16. Mandag og tirsdag er der lukket.</p></details>
         <details><summary>Hvor ligger Reol-Loppen?</summary><p>Du finder os i Langeskov Centeret 17 i Langeskov. Tryk på „Find vej" ovenfor, så åbner Google Maps.</p></details>
         <details><summary>Hvad kan man finde hos jer?</summary><p>Møbler, glas, porcelæn, lamper, billeder, pynt, ældre ting og meget andet. Udvalget skifter hele tiden, så kig forbi tit.</p></details>
         <details><summary>Hvor tit kommer der nye ting?</summary><p>Der kommer nye ting ind hele tiden. Følg os på Instagram, så ser du dem, så snart de er på hylderne.</p></details>
@@ -588,7 +588,7 @@ html.js .rv.in{opacity:1;transform:none}
     </div>
     <div class="col">
       <h3>Åbningstider</h3>
-      <p>Ons–fre 10–17<br>Lør–søn 10–16<br>Man–tirs lukket</p>
+      <p>Ons–fre 10–17.30<br>Lør–søn 10–16<br>Man–tirs lukket</p>
     </div>
     <div class="col">
       <h3>Følg med</h3>
@@ -601,15 +601,16 @@ html.js .rv.in{opacity:1;transform:none}
 <script>
 (function(){
   try{
-    var schedule={0:[10,16],3:[10,17],4:[10,17],5:[10,17],6:[10,16]};
+    var schedule={0:[10,16],3:[10,17.5],4:[10,17.5],5:[10,17.5],6:[10,16]};
+    var fk=function(x){var m=Math.round((x%1)*60);return Math.floor(x)+(m?'.'+(m<10?'0':'')+m:'');};
     var names=['søndag','mandag','tirsdag','onsdag','torsdag','fredag','lørdag'];
     var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Copenhagen',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
     var map={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6},wd,hh,mm;
     parts.forEach(function(p){if(p.type==='weekday')wd=map[p.value];if(p.type==='hour')hh=+p.value;if(p.type==='minute')mm=+p.value;});
     var h=hh+mm/60,t=schedule[wd],dot=document.getElementById('dot'),st=document.getElementById('status');
-    if(t&&h>=t[0]&&h<t[1]){st.textContent='Åbent nu – til kl. '+t[1];dot.style.background='#3cc074';return;}
+    if(t&&h>=t[0]&&h<t[1]){st.textContent='Åbent nu – til kl. '+fk(t[1]);dot.style.background='#3cc074';return;}
     dot.style.background='#e0604f';st.textContent='Lukket lige nu';
-    for(var k=0;k<8;k++){var d=(wd+k)%7,s=schedule[d];if(s&&(k>0||h<s[0])){st.textContent='Lukket nu – åbner '+(k===0?'i dag':k===1?'i morgen':names[d])+' kl. '+s[0];break;}}
+    for(var k=0;k<8;k++){var d=(wd+k)%7,s=schedule[d];if(s&&(k>0||h<s[0])){st.textContent='Lukket nu – åbner '+(k===0?'i dag':k===1?'i morgen':names[d])+' kl. '+fk(s[0]);break;}}
   }catch(e){}
 })();
 </script>
